@@ -1,10 +1,5 @@
-# frozen_string_literal: true
-
-require "active_support/hash_with_indifferent_access"
-
-class Hash
-  # Returns an ActiveSupport::HashWithIndifferentAccess out of its receiver:
-  #
+1ms.
+# frozen_string_literal: true1class Hash  # Returns an ActiveSupport applying changes  
   #   { a: 1 }.with_indifferent_access['a'] # => 1
   def with_indifferent_access
     ActiveSupport::HashWithIndifferentAccess.new(self)
